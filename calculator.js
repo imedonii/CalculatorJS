@@ -36,3 +36,9 @@ document.querySelector('.times').addEventListener('click', () => {
 document.querySelector('.devide').addEventListener('click', () => {
     returnSum(devide());
 });
+
+document.querySelector('.rButton').addEventListener('click', () => {
+    document.querySelector('.sum').textContent = 0;
+    document.querySelector('.no1').value = '';
+    document.querySelector('.no2').value = '';
+});

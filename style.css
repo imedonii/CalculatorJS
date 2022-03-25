@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.summ {
+  text-align: center;
+}
+
+.inp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid antiquewhite;
+  padding: 5px;
+  width: 40px;
+}
+
+.no1 {
+  margin-right: 15px;
+}
+
+.operators {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 5px 20px;
+  margin: 10px;
+  border: none;
+}
+
+button:hover {
+  background-color: antiquewhite;
+}
+
+.sum {
+  color: orange;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.reset {
+  display: flex;
+  justify-content: center;
+}
+
+.rButton {
+  color: rgb(162, 0, 0);
+  width: 240px;
+}
