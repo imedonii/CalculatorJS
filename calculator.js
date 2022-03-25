@@ -1,36 +1,38 @@
 'use strict';
 
+const returnSum = (fun) => {
+    document.querySelector('.sum').textContent = fun;
+}
+
+const no1 = () => {
+    return Number(document.querySelector('.no1').value);
+}
+const no2 = () => {
+    return Number(document.querySelector('.no2').value);
+}
 
 const plus = () => {
-    let no1 = Number(document.querySelector('.no1').value);
-    let no2 = Number(document.querySelector('.no2').value);
-    return no1 + no2;
+    return no1() + no2();
 }
 const minus = () => {
-    let no1 = Number(document.querySelector('.no1').value);
-    let no2 = Number(document.querySelector('.no2').value);
-    return no1 - no2;
+    return no1() - no2();
 }
 const times = () => {
-    let no1 = Number(document.querySelector('.no1').value);
-    let no2 = Number(document.querySelector('.no2').value);
-    return no1 * no2;
+    return no1() * no2();
 }
 const devide = () => {
-    let no1 = Number(document.querySelector('.no1').value);
-    let no2 = Number(document.querySelector('.no2').value);
-    return no1 / no2;
+    return no1() / no2();
 }
 
 document.querySelector('.plus').addEventListener('click', () => {
-    document.querySelector('.sum').textContent = plus();
+    returnSum(plus());
 });
 document.querySelector('.minus').addEventListener('click', () => {
-    document.querySelector('.sum').textContent = minus();
+    returnSum(minus());
 });
 document.querySelector('.times').addEventListener('click', () => {
-    document.querySelector('.sum').textContent = times();
+    returnSum(times());
 });
 document.querySelector('.devide').addEventListener('click', () => {
-    document.querySelector('.sum').textContent = devide();
+    returnSum(devide());
 });
